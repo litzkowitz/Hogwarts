@@ -1,2 +1,79 @@
-// Style your Hogwarts site
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body, html {
+	font-family: Helvetica;
+	font-size: 10px;
+	margin: 0 auto;
+	height: 100%;
+
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 75px;
+	text-align: center;
+	color: #fff;
+}
+
+.default {
+	display: relative;
+	float: left;
+	vertical-align: top;
+	height: 728px;
+
+}
+
+.content {
+	display: none;
+}
+.gryffindor {
+	background-image: url(/images/Gryffindor-wallpaper.jpg);
+}
+
+.slytherin {
+	background-image: url(/images/slytherin-wallpaper.jpg);
+}
+
+.hufflepuff {
+	background-image: url(/images/hufflepuff-wallpaper.jpg);
+}
+
+.ravenclaw {
+	background-image: url(/images/ravenclaw-wallpaper.jpg);
+}
+.inactive {
+	width: 8%;
+}
+
+.active {
+	width: 75%;
+		.content {
+			display: block;
+		}
+
+}
+
+.column {
+	display: inline-block;
+	padding: 30px;
+	background-color: #ccc;
+	width: 33%;
+}
+
+.row {
+	background-color: yellow;
+	padding: 30px;
+
+}
+footer {
+	display: block;
+	clear: left;
+	width: 100%;
+	color: #ccc;
+	background-color: #000;
+	vertical-align: bottom;
+}
