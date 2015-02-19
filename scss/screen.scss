@@ -5,45 +5,70 @@
 }
 
 body, html {
-	font-family: Helvetica;
-	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 1.3em;
+	color: white;
 	margin: 0 auto;
 	height: 100%;
-
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-top: 75px;
-	text-align: center;
+	margin-left: 85px;
 	color: #fff;
+	padding: 30px;
+	letter-spacing: 2px;
+}
+
+p {
+	margin-left: 30px;
+	width: 90%;
+	padding-top: 25px;
 }
 
 .default {
-	display: relative;
+	position: relative;
 	float: left;
 	vertical-align: top;
 	height: 728px;
 
 }
 
+.svg {
+	width: 32px;
+	height: 32px;
+}
+
 .content {
 	display: none;
+
+		img {
+			float: left;
+			width: 70px;
+			height: 70px;
+			margin-left: 30px;
+		}
 }
 .gryffindor {
-	background-image: url(/images/Gryffindor-wallpaper.jpg);
+	background-color: green;
+	//background-image: url(/images/Gryffindor-wallpaper.jpg);
 }
 
 .slytherin {
-	background-image: url(/images/slytherin-wallpaper.jpg);
+	background-color: black;
+	//background-image: url(/images/slytherin-wallpaper.jpg);
 }
 
 .hufflepuff {
-	background-image: url(/images/hufflepuff-wallpaper.jpg);
+	background-color: orange;
+	//background-image: url(/images/hufflepuff-wallpaper.jpg);
 }
 
 .ravenclaw {
-	background-image: url(/images/ravenclaw-wallpaper.jpg);
+	background-color: blue;
+	//background-image: url(/images/ravenclaw-wallpaper.jpg);
 }
 .inactive {
 	width: 8%;
@@ -59,9 +84,15 @@ h1 {
 
 .column {
 	display: inline-block;
+	font-style: italic;
+	text-align: center;
 	padding: 30px;
-	background-color: #ccc;
 	width: 33%;
+
+		p {
+			font-size: 1.25rem;
+			padding-top: 25px;
+		}
 }
 
 .row {
