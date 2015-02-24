@@ -1,44 +1,148 @@
-/*
-Error: Invalid CSS after "...-icons-sprites;": expected "}", was ""
-        on line 113 of /Users/persnickety88/Desktop/Hogwarts/scss/screen.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-108: 	background-color: #000;
-109: 	vertical-align: bottom;
-110: }
-111: 
-112: @import "icons/*.png"; 
-113: @include all-icons-sprites;
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.3em;
+  color: white;
+  margin: 0 auto;
+  height: 100%;
+}
 
-Backtrace:
-/Users/persnickety88/Desktop/Hogwarts/scss/screen.scss:113
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:643:in `block'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:44:in `call'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `load'
-/Applications/Prepros-Mac-5.2.0/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...-icons-sprites;\": expected \"}\", was \"\"\A         on line 113 of /Users/persnickety88/Desktop/Hogwarts/scss/screen.scss\A \A 108: 	background-color: #000;\A 109: 	vertical-align: bottom;\A 110: }\A 111: \A 112: @import \"icons/*.png\"; \A 113: @include all-icons-sprites;"; }
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 30px;
+  padding-top: 100px;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-left: 30px;
+  width: 75%;
+  margin-top: 50px;
+}
+
+.default {
+  position: relative;
+  float: left;
+  vertical-align: top;
+  height: 728px;
+}
+
+.icon {
+  display: inline-block;
+  width: 125px;
+  height: 149px;
+  margin-top: 15px;
+  float: right;
+}
+
+.svg {
+  width: 32px;
+  height: 32px;
+}
+
+.content {
+  display: none;
+}
+
+.gryffindor {
+  background-color: #8a0e0e;
+}
+
+.slytherin {
+  background-color: #1f8a0e;
+}
+
+.hufflepuff {
+  background-color: #908720;
+}
+
+.ravenclaw {
+  background-color: #207290;
+}
+
+.inactive {
+  width: 8%;
+}
+.inactive .gryffindor {
+  background-color: lighter(#8a0e0e, 50%);
+}
+.inactive .slyterin {
+  background-color: lighter(#1f8a0e, 50%);
+}
+
+.active {
+  width: 75%;
+}
+.active .content {
+  display: block;
+}
+
+.column {
+  font-style: italic;
+  width: 33%;
+}
+.column p {
+  font-size: 1.25rem;
+  padding-top: 25px;
+}
+
+.row {
+  background-color: yellow;
+  padding: 30px;
+}
+
+.video-wrapper {
+  display: inline-block;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+}
+.video-wrapper iframe {
+  position: absolute;
+  padding: 0px;
+}
+
+footer {
+  display: block;
+  clear: left;
+  width: 100%;
+  color: #ccc;
+  background-color: #000;
+  vertical-align: bottom;
+}
+
+.icons-sprite, .icons-all-houses, .icons-gryffindor, .icons-hufflepuff, .icons-icons-s8d8e7bcf02, .icons-ravenclaw, .icons-slytherin {
+  background-image: url('/images/icons-s704b660461.png');
+  background-repeat: no-repeat;
+}
+
+.icons-all-houses {
+  background-position: 0 0;
+}
+
+.icons-gryffindor {
+  background-position: 0 -181px;
+}
+
+.icons-hufflepuff {
+  background-position: 0 -330px;
+}
+
+.icons-icons-s8d8e7bcf02 {
+  background-position: 0 -476px;
+}
+
+.icons-ravenclaw {
+  background-position: 0 -1234px;
+}
+
+.icons-slytherin {
+  background-position: 0 -1374px;
+}
